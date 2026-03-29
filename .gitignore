@@ -1,0 +1,16 @@
+# Python virtual env and caches
+env/
+.venv/
+__pycache__/
+*.pyc
+
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# IDE and OS
+.vscode/
+.DS_Store

@@ -1,0 +1,21 @@
+{
+  "name": "minio-s3-sink",
+  "config": {
+    "connector.class": "io.confluent.connect.s3.S3SinkConnector",
+    "tasks.max": "1",
+    "topics": "bitcoin_price",
+    "s3.region": "us-east-1",
+    "s3.bucket.name": "bitcoin-lake",
+    "store.url": "http://minio:9000",
+    "s3.path.style.access": "true",
+    "aws.access.key.id": "${env:MINIO_ACCESS_KEY}",
+    "aws.secret.access.key": "${env:MINIO_SECRET_KEY}",
+    "flush.size": "3",
+    "storage.class": "io.confluent.connect.s3.storage.S3Storage",
+    "format.class": "io.confluent.connect.s3.format.json.JsonFormat",
+    "schema.compatibility": "NONE",
+    "key.converter": "org.apache.kafka.connect.storage.StringConverter",
+    "value.converter": "org.apache.kafka.connect.json.JsonConverter",
+    "value.converter.schemas.enable": "false"
+  }
+}
