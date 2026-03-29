@@ -1,4 +1,5 @@
 # End-to-End Crypto Data Pipeline
+<img width="1331" height="1368" alt="diagram-export-26-03-2026-13_34_18" src="https://github.com/user-attachments/assets/e61a334d-475d-4cd5-87e8-c0f810f427a9" />
 
 Real-time crypto data platform built with Python, Kafka, Spark, MinIO, and PostgreSQL using a medallion architecture.
 
