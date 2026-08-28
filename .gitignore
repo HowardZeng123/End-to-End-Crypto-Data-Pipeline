@@ -14,3 +14,9 @@ __pycache__/
 # IDE and OS
 .vscode/
 .DS_Store
+
+# Airflow
+airflow/logs/
+airflow/airflow.cfg
+airflow/*.db
+airflow/__pycache__/
